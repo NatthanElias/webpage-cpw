@@ -1,0 +1,23 @@
+:root{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    --primary-color: #192036;
+    --secondary-color: #00416C;
+    --tertiary-color: #EAA88F;
+}
+
+body{
+    color:black;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.fa-memo-pad{
+    color: var(--secondary-color);
+}
