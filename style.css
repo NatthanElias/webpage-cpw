@@ -14,12 +14,12 @@ body{
 }
 
 main{
-    margin-left: 5rem;
+    margin-left: 4rem;
     padding: 1rem;
 }
 
 .navbar{
-    width: 5rem;
+    width: 4rem;
     height: 100vh;
     position: fixed;
     background-color: var(--primary-color);
@@ -37,11 +37,15 @@ main{
 
 .nav-item{
     width: 100%;
-    padding: 1rem 0;
+    padding: 16px 0;
 }
 
 .nav-item:last-child{
     margin-top: auto;
+}
+
+.nav-item:nth-child(2){
+    padding: 16px 5px;
 }
 
 .fa-solid{
