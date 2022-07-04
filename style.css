@@ -40,7 +40,7 @@ main{
 
 .nav-item{
     width: 100%;
-    padding: 16px 0;
+    height: 64px;
 }
 
 .nav-item:last-child{
@@ -54,7 +54,7 @@ main{
 .nav-link{
     display: flex;
     align-items: center;
-    height: 48px;
+    height: 64px;
     text-decoration: none;
     color: var(--secondary-color);
     transition: var(--transition-speed);
