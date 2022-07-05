@@ -41,15 +41,12 @@ main{
 .nav-item{
     width: 100%;
     height: 64px;
+
 }
 
 .nav-item:last-child{
     margin-top: auto;
 }
-
-/*.nav-item:nth-child(2){
-    padding: 16px 0px 16px 5px;
-}*/
 
 .nav-link{
     display: flex;
@@ -71,6 +68,10 @@ main{
     transition: var(--transition-speed);
 }
 
+.fa-file-pen{
+    padding: 16px 5px;
+}
+
 .nav-text{
     margin-left: 16px;
     visibility: hidden;
@@ -87,15 +88,11 @@ main{
     opacity: 1;
 }
 
-.nav-link:hover, .nav-link:hover .fa-solid {
+.nav-link:hover {
     color: var(--tertiary-color);
     background-color: var(--secondary-color);
 }
 
-.tab-content{
-    display: none;
-}
-
-.active-tab{
-    display: block;
+.nav-link:hover .fa-solid{
+    color: var(--tertiary-color);
 }
