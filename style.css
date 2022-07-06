@@ -2,7 +2,7 @@
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     --primary-color: #192036;
-    --secondary-color: #00416C;
+    --secondary-color: #6171A9;
     --tertiary-color: #61DAFB;
     --dark-bg-color: black;
     --transition-speed: 600ms;
@@ -68,16 +68,22 @@ main{
     transition: var(--transition-speed);
 }
 
-.fa-file-pen{
-    padding: 16px 5px;
+.fa-file-pen{                            
+    padding: 16px 5px; /*aligning menu icon*/
 }
+
+.nav-item:nth-child(2) .nav-text{
+    margin-left: 5.5px;
+}
+
 
 .nav-text{
     margin-left: 16px;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.7s ease-in;
 }
+
 
 .navbar:hover {
     width: 12rem;
@@ -95,4 +101,12 @@ main{
 
 .nav-link:hover .fa-solid{
     color: var(--tertiary-color);
+}
+
+.tab-content{
+    display: none;
+}
+
+.active-tab{
+    display: block;
 }
