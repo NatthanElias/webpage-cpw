@@ -76,14 +76,12 @@ main{
     margin-left: 5.5px;
 }
 
-
 .nav-text{
     margin-left: 16px;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.7s ease-in;
 }
-
 
 .navbar:hover {
     width: 12rem;
@@ -94,7 +92,7 @@ main{
     opacity: 1;
 }
 
-.nav-link:hover {
+.nav-link:hover, .drop-link:hover {
     color: var(--tertiary-color);
     background-color: var(--secondary-color);
 }
@@ -107,6 +105,29 @@ main{
     display: none;
 }
 
-.active-tab{
+.active-content{
     display: block;
+}
+
+.fa-angle-down{
+    font-size: 1rem;
+}
+
+.drop-link{
+    text-decoration: none;
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    height: 48px;
+    text-align: left;
+    justify-content: center;
+}
+
+.drop-link span{
+    padding-left: 48px;
+}
+
+.dropdown {
+    list-style: none;
+    padding: 0;
 }

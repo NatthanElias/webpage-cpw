@@ -1,8 +1,9 @@
 function changeTab(tabName) {
-    var i;
-    var x = document.getElementsByClassName("tab-content");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
+    var content = document.getElementsByClassName("tab-content");
+    for (var i = 0; i < content.length; i++) {
+      content[i].classList.remove("active-content");
     }
-    document.getElementById(tabName).style.display = "block";
+
+    document.getElementById(tabName).classList.add("active-content");
+
   }
