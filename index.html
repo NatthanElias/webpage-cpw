@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar">
+    <nav id="navbar">
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a href="#" class="nav-link" onclick="changeTab('Principal')">
@@ -34,28 +34,28 @@
             </li>
 
             <li class="nav-item">
-                <a href="#" class="nav-link" onclick="changeTab('Relatorio')">
-                    <i class="fa-solid fa-paste"></i>
+                <a href="#" class="nav-link" id="dropdown">
+                    <i class="fa-solid fa-paste" id="drop-icon"></i>
                     <span class="nav-text">Relatório</span>
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="fa-solid fa-angle-down" id="arrow"></i>
                 </a>
-
-                <ul class="dropdown">
+                
+                <ul id="drop-nav" style="display: none;">
 
                     <li class="drop-item">
-                        <a href="#" class="drop-link">
+                        <a href="#" class="drop-link" onclick="changeTab('Ele-pre')">
                         <span class="nav-text">Elementos pré-textuais</span>
                         </a>
                     </li>
 
                     <li class="drop-item">
-                        <a href="#" class="drop-link" >
+                        <a href="#" class="drop-link" onclick="changeTab('Ele-text')">
                         <span class="nav-text">Elementos textuais</span>
                         </a>
                     </li>
 
                     <li class="drop-item">
-                        <a href="#" class="drop-link" >
+                        <a href="#" class="drop-link" onclick="changeTab('Ele-post')">
                         <span class="nav-text">Elementos pós-textuais</span>
                         </a>
                     </li>
@@ -65,7 +65,7 @@
             </li>
 
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#" class="nav-link" id="theme">
                     <i class="fa-solid fa-moon"></i>
                     <span class="nav-text ">Tema</span>
                 </a>
@@ -105,8 +105,28 @@
 
         </div>
 
-        <div id="Relatorio" class="tab-content">
-            <h1>Relatório</h1>
+        <div id="Ele-pre" class="tab-content">
+            <h1>Elementos pré-textuais</h1>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
+
+        </div>
+
+        <div id="Ele-text" class="tab-content">
+            <h1>Elementos textuais</h1>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
+
+        </div>
+
+        <div id="Ele-post" class="tab-content">
+            <h1>Elementos pós-textuais</h1>
 
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
@@ -117,7 +137,8 @@
         
     </main>
 
-    <script src="./js/TabNav.js"></script>
+    <script src="./js/changeTab.js"></script>
+    <script src="./js/tabDropSelect.js"></script>
 
 </body>
 </html>
