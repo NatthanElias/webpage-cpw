@@ -5,19 +5,34 @@
     --secondary-color: #6171A9;
     --tertiary-color: #61DAFB;
     --dark-bg-color: #181818;
+    --dark-text-color: #e4e4e4;
     --transition-speed: 600ms;
 }
 
 body{
-    color:#000;
-    background-color: white;
     margin: 0;
     padding: 0;
+    transition: background 300ms ease-in-out, color 1000ms ease-in-out;
+}
+
+.light{
+    color: #000;
+    background-color: #fff;
+}
+
+.dark{
+    color: var(--dark-text-color);
+    background-color: var(--dark-bg-color);
 }
 
 main{
     margin-left: 4rem;
     padding: 1rem;
+}
+
+section{
+    margin-top: 4rem;
+    height: 90vh;
 }
 
 #navbar{
@@ -147,4 +162,54 @@ main{
 
 .no-hover-icon{
     color: var(--tertiary-color);
+}
+
+footer{
+    height: 4rem;
+    padding-left: 4rem;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96.6%;
+    position: absolute;
+    clear: both;
+}
+
+.rodape{
+    color: var(--secondary-color);
+}
+
+footer a img{
+    height: 1.5rem;
+    padding: 10px;
+}
+
+header{
+    height: 4rem;
+    padding-left: 4rem;
+    background-color: var(--primary-color);
+    position: absolute;
+    width: 96.6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+}
+
+.cabecalho{
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    transition: var(--transition-speed);
+}
+.cabecalho:hover{
+    color: var(--tertiary-color);
+}
+
+#theme span{
+    position: fixed;
+    padding-left: 3.5rem;
 }
