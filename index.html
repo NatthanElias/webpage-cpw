@@ -126,22 +126,44 @@
                         <p>Caso ainda não tenha se convencido, o ecossistema da tecnologia acompanhou sua crescente popularidade, hoje em dia é possível criar soluções que vão desde aplicativos mobile, com React Native, até aplicações Desktop com Electron, e ainda a possibilidade de criar aplicações em realidade virtual, utilizando React VR. Ou seja, você, literalmente, só precisa aprender uma vez, para ter acesso a um mundo inteiro de possibilidades de implementações em React, tá esperando o quê?</p>
                     </li>
                 </ul>
-
-                <h2>Referências:</h2>
-                <p class="references">SURVE, Suraj. Why you should use React.js for Web Development. Organization FreeCodeCamp. Disponível em: &lt;https://www.freecodecamp.org/news/why-use-react-for-web-development/>. Acesso em 05, jul. 2022.</p>
-                <p class="references">React: Uma biblioteca JavaScript para criar interfaces de usuário. Organization Meta Platforms, Inc. Disponível em: &lt;https://pt-br.reactjs.org/>. Acesso em 09, jul. 2022.</p>
-
+                <div class="container-ref">
+                    <h2>Referências:</h2>
+                    <p class="references">SURVE, Suraj. Why you should use React.js for Web Development. Organization FreeCodeCamp. Disponível em: &lt;https://www.freecodecamp.org/news/why-use-react-for-web-development/>. Acesso em 05, jul. 2022.</p>
+                    <p class="references">React: Uma biblioteca JavaScript para criar interfaces de usuário. Organization Meta Platforms, Inc. Disponível em: &lt;https://pt-br.reactjs.org/>. Acesso em 09, jul. 2022.</p>
+                </div>
             </div>
         </section>
 
         <section id="Formulario" class="tab-content">
-            <h1>Formulário</h1>
+            <div class="container">
+                <h1>Formulário</h1>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
+                    <div class="form">
 
+                        <form action="">
+
+                            <div class="form-fields">
+                                <label for="name">Nome:</label>
+                                <input type="text" id="name" name="name"><br><br>
+                            </div>
+
+                            <div class="form-fields">
+                                <label for="e-mail">E-mail:</label>
+                                <input type="email" id="e-mail" name="e-mail">
+                            </div>
+
+                            <div class="textarea">
+                                <label for="msg">Escreva sua mensagem:</label>
+                                <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                            </div>
+                            
+                            <input type="submit" value="Enviar" id="btn">
+
+                        </form>
+
+                    </div>
+
+            </div>
         </section>
 
         <section id="Ele-pre" class="tab-content">
@@ -176,15 +198,20 @@
         
     </main>
 
-
-    <script src="./js/changeTab.js"></script>
-    <script src="./js/tabDropSelect.js"></script>
-    <script src="./js/changeTheme.js"></script>
-    
     <footer>
         <span class="rodape">&copy; COPYRIGHT | Natthan Elias |</span>
         <a href="https://www.linkedin.com/in/natthan-elias/" target="_blank"><img src="./assets/linkedin.png"></a>
     </footer>
+
+    <script src="./js/changeTab.js"></script>
+    <script src="./js/tabDropSelect.js"></script>
+    <script src="./js/changeTheme.js"></script>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+     <script src="App.js"></script>
+     <script src="index.js"></script>
 
 </body>
 </html>
