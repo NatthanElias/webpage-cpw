@@ -138,31 +138,31 @@
             <div class="container">
                 <h1>Formulário</h1>
 
-                    <div class="form">
+                <div class="form-container">
 
-                        <form action="">
+                    <form action="" id="form">
 
-                            <div class="form-fields">
-                                <label for="name">Nome:</label>
-                                <input type="text" id="name" name="name"><br><br>
-                            </div>
+                        <div class="form-fields">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" placeholder="Digite seu nome">
+                        </div>                      
 
-                            <div class="form-fields">
-                                <label for="e-mail">E-mail:</label>
-                                <input type="email" id="e-mail" name="e-mail">
-                            </div>
+                        <div class="form-fields">
+                            <label for="e-mail">E-mail:</label>
+                            <input type="email" id="e-mail" name="e-mail" placeholder="nome@email.com">
+                        </div>                        
 
-                            <div class="textarea">
-                                <label for="msg">Escreva sua mensagem:</label>
-                                <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-                            </div>
-                            
-                            <input type="submit" value="Enviar" id="btn">
+                        <div class="textarea">
+                            <label for="msg">Escreva sua mensagem:</label>
+                            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                        </div>
+                        <span id="error" style="color:rgb(184, 14, 14);"></span>
+                        
+                        <input type="submit" value="Enviar" id="btn">
 
-                        </form>
+                    </form>
 
-                    </div>
-
+                </div>
             </div>
         </section>
 
@@ -206,12 +206,7 @@
     <script src="./js/changeTab.js"></script>
     <script src="./js/tabDropSelect.js"></script>
     <script src="./js/changeTheme.js"></script>
-
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-
-     <script src="App.js"></script>
-     <script src="index.js"></script>
+    <script src="./js/formValidation.js"></script>
 
 </body>
 </html>
