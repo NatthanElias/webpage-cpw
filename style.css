@@ -54,8 +54,32 @@ section{
 
 .container h2{
     color: var(--tertiary-color);
-
 }
+
+header{
+    height: 4rem;
+    padding-left: 4rem;
+    background-color: var(--primary-color);
+    position: absolute;
+    width: 96.6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+}
+
+.cabecalho{
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    transition: var(--transition-speed);
+}
+.cabecalho:hover{
+    color: var(--tertiary-color);
+}
+
 
 .title{
     text-align: center;
@@ -299,29 +323,6 @@ footer a img{
     padding: 10px;
 }
 
-header{
-    height: 4rem;
-    padding-left: 4rem;
-    background-color: var(--primary-color);
-    position: absolute;
-    width: 96.6%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header a{
-    text-decoration: none;
-}
-
-.cabecalho{
-    color: var(--secondary-color);
-    font-size: 1.5rem;
-    transition: var(--transition-speed);
-}
-.cabecalho:hover{
-    color: var(--tertiary-color);
-}
 
 #theme span{
     position: fixed;

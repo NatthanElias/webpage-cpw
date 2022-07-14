@@ -104,6 +104,10 @@
                 <h2>Como surgiu?</h2>
                 <p>A biblioteca foi criada em 2011 por Jordan Walke, um engenheiro do Facebook. Posteriormente, em 2013, o Facebook decidiu transformar o React.js em uma ferramenta open source. Este foi o primeiro passo para a tecnologia atingir o nível de popularidade atual, pois possibilitou a criação de uma grande comunidade de desenvolvedores individuais, que colaboram refinando ainda mais o projeto.</p>
 
+                <h2>Como implementar?(Pré-requisitos)</h2>
+                <p>De acordo com o própro site do React, para implementar a tecnologia você necessita de navegadores e/ou dispositivos com suporte aos objetos Map e Set do Javasscript. Caso contrário, faz-se necessário a incluir um polyfill global no bundle de sua aplicação, tal como o pacote <a href="https://github.com/zloirock/core-js">core-js</a>.</p>
+                <p>Também é possível adicionar o React a apenas uma parte do site, com poucas linhas de código. Para isto, é necessário adicionar um container ao HTML com o id de sua aplicação referenciada em seu Componente React, criar seu Componente e adicionar as Tags Script necessárias para adicionar o React ao site. Para mais informações e tutorial completo, <a href="https://pt-br.reactjs.org/docs/add-react-to-a-website.html">clique aqui</a>.</p>
+
                 <h2>Por que utilizar?</h2>
                 <ul>
                     <li>
@@ -140,7 +144,7 @@
 
                 <div class="form-container">
 
-                    <form action="" id="form">
+                    <form action="/" id="form">
 
                         <div class="form-fields">
                             <label for="name">Nome:</label>
@@ -156,7 +160,7 @@
                             <label for="msg">Escreva sua mensagem:</label>
                             <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
                         </div>
-                        <span id="error" style="color:rgb(184, 14, 14);"></span>
+                        <span id="error" style="color:rgba(255, 1, 1, 0.651); font-weight: bold;"></span>
                         
                         <input type="submit" value="Enviar" id="btn">
 
@@ -167,32 +171,35 @@
         </section>
 
         <section id="Ele-pre" class="tab-content">
-            <h1>Elementos pré-textuais</h1>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
+            <div class="container">
+                <h1>Elementos pré-textuais</h1>
+                <div class="pdf">
+                    <embed src="" type="application/pdf">
+                </div>
+            </div>
 
         </section>
 
         <section id="Ele-text" class="tab-content">
-            <h1>Elementos textuais</h1>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
+            <div class="container">
+                <h1>Elementos textuais</h1>
+                <div class="pdf">
+                    <embed src="" type="application/pdf">
+                </div>
+            </div>
 
         </section>
 
         <section id="Ele-post" class="tab-content">
-            <h1>Elementos pós-textuais</h1>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad possimus laboriosam natus eos obcaecati est veniam, nulla dolorem unde placeat consectetur ex beatae voluptates dolorum vel modi quisquam laudantium excepturi quasi nihil. Corrupti est quae quia repellendus earum eaque quas rerum, necessitatibus obcaecati aut veritatis consequatur magni officiis, totam tenetur voluptatem labore ducimus similique fugiat natus. Obcaecati odit libero voluptatibus eligendi ipsum soluta odio quisquam alias ut architecto cum mollitia, minima, in laborum aliquam! Ad perferendis neque mollitia nisi quia qui vero quae iure pariatur molestias! Ex, quam sequi. Quam dolorem unde delectus odio expedita possimus mollitia aperiam nulla labore?  </p>
+            <div class="container">
+                <h1>Elementos pós-textuais</h1>
+                <div class="pdf">
+                    <embed src="" type="application/pdf">
+                </div>
+            </div>
 
         </section>
         

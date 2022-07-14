@@ -6,17 +6,23 @@ document.addEventListener('DOMContentLoaded', function () {
     var error = document.getElementById("error");
 
     form.addEventListener('submit', function(e){
+        const nameValue = name.value.trim();
+        const emailValue = email.value.trim();
+        const msgValue = msg.value.trim();
+
         var messages = [];
 
-        if(name.value === "" || name.value == null){
+        if(nameValue === "" || nameValue == null){
             messages.push("Preencha o campo nome");
         }
 
-        if(email.value === "" || email.value == null){
+        if(emailValue === "" || emailValue == null){
             messages.push("Preencha o campo e-mail");
+        }else if (!isValidEmail(emailValue)) {
+            messages.push("E-mail inválido")
         }
 
-        if(msg.value === "" || msg.value == null){
+        if(msgValue === "" || msgValue == null){
             messages.push("Preencha o campo mensagem");
         }
 
@@ -26,5 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         
     });
+
+    const isValidEmail = email => {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
 
 });
